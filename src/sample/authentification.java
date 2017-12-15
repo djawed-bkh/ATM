@@ -43,15 +43,18 @@ public class authentification {
     @FXML
     private Button annule;
     @FXML
-    private Button retour;
+    private Button sup;
     @FXML
     private PasswordField screen;
+    @FXML
+    private Label screen1;
 
 
     private int codetest;
-    private int codemem=2461;
+    private int codemem=1111;
     private boolean test=false;
     private int nbrtest=0;
+    private int nbclics=0;
     //initialisations
 
 
@@ -60,59 +63,75 @@ public class authentification {
 
     @FXML
     public void action (ActionEvent event) throws IOException {
-        if(event.getSource()==n1){
-            System.out.println( "n1"+event.getSource());
-            screen.setText(screen.getText()+"1");
+        nbclics++;
+        if (nbclics<=4){
+            if(event.getSource()==n1){
+                System.out.println( "n1"+event.getSource());
+                screen.setText(screen.getText()+"1");
 
 
-        }else if((event.getSource()==n2)){
-            System.out.println( "n1"+event.getSource());
+            }else if((event.getSource()==n2)){
+                System.out.println( "n1"+event.getSource());
 
-            screen.setText(screen.getText()+"2");
-        }else if((event.getSource()==n3)){
-            System.out.println( "n1"+event.getSource());
+                screen.setText(screen.getText()+"2");
+            }else if((event.getSource()==n3)){
+                System.out.println( "n1"+event.getSource());
 
-            screen.setText(screen.getText()+"3");
-        }else if((event.getSource()==n4)){
-            System.out.println( "n1"+event.getSource());
+                screen.setText(screen.getText()+"3");
+            }else if((event.getSource()==n4)){
+                System.out.println( "n1"+event.getSource());
 
-            screen.setText(screen.getText()+"4");
-        }else if((event.getSource()==n5)){
+                screen.setText(screen.getText()+"4");
+            }else if((event.getSource()==n5)){
 
-            screen.setText(screen.getText()+"5");
-        }else if((event.getSource()==n6)){
+                screen.setText(screen.getText()+"5");
+            }else if((event.getSource()==n6)){
 
-            screen.setText(screen.getText()+"6");
-        }else if((event.getSource()==n7)){
+                screen.setText(screen.getText()+"6");
+            }else if((event.getSource()==n7)){
 
-            screen.setText(screen.getText()+"7");
-        }else if((event.getSource()==n8)){
+                screen.setText(screen.getText()+"7");
+            }else if((event.getSource()==n8)){
 
-            screen.setText(screen.getText()+"8");
-        }else if((event.getSource()==n9)){
+                screen.setText(screen.getText()+"8");
+            }else if((event.getSource()==n9)){
 
-            screen.setText(screen.getText()+"9");
-        }else if((event.getSource()==n0)){
-            System.out.println( "n1"+event.getSource());
-            screen.setText(screen.getText()+"0");
-        } else if((event.getSource()==entrer && nbrtest<3)){
+                screen.setText(screen.getText()+"9");
+            }else if((event.getSource()==n0)) {
+                System.out.println("n1" + event.getSource());
+                screen.setText(screen.getText() + "0");
+            }
+            }
+        }
+
+
+
+
+    public void Valider(ActionEvent event) throws IOException {
+        if((event.getSource()==entrer && nbrtest<3)){
+            System.out.println("test 0");
+            nbclics=0;
             nbrtest++;
+            System.out.println( event.getSource());
             codetest=Integer.parseInt(screen.getText());
             if (verification()==true){
-                /*((Node) (event.getSource())).getScene().getWindow().hide();
+                ((Node) (event.getSource())).getScene().getWindow().hide();
+                System.out.println("verification");
                 Parent root = FXMLLoader.load(getClass().getResource("/sample/compte.fxml"));
                 Stage primaryStage = new Stage();
                 primaryStage.setTitle("ATM");
                 primaryStage.setScene(new Scene(root));
                 primaryStage.setResizable(false);
-                primaryStage.show();*/
+                primaryStage.show();
             }else {
-                screen.setText("ce mot de passe est incorrecte");
+                screen1.setText("ce mot de passe est incorrecte RÉESSAYEZ");
+                screen.setText("");
+
             }
-        }
 
-
-    }
+    }else if (nbrtest>3){
+            screen1.setText("TROP DE TENTATIVES MACHINE MOMENTANÉMENT BLOQUÉ");
+        }}
     public boolean verification(){
         if (codetest==codemem){
             test=true;
