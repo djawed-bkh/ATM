@@ -117,7 +117,7 @@ public class authentification {
             if (verification()==true){
                 ((Node) (event.getSource())).getScene().getWindow().hide();
                 System.out.println("verification");
-                Parent root = FXMLLoader.load(getClass().getResource("/sample/compte.fxml"));
+                Parent root = FXMLLoader.load(getClass().getResource("/sample/cmpt.fxml"));
                 Stage primaryStage = new Stage();
                 primaryStage.setTitle("ATM");
                 primaryStage.setScene(new Scene(root));
