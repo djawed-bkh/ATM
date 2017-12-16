@@ -51,43 +51,43 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-        <Button fx:id="n1" layoutX="215.0" layoutY="389.0" mnemonicParsing="false" onAction="#menu" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="1">
+        <Button fx:id="n1" layoutX="215.0" layoutY="389.0" mnemonicParsing="false" onAction="#sasie" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="1">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-        <Button fx:id="n2" layoutX="274.0" layoutY="389.0" mnemonicParsing="false" onAction="#menu" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="2">
+        <Button fx:id="n2" layoutX="274.0" layoutY="389.0" mnemonicParsing="false" onAction="#sasie" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="2">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-        <Button fx:id="n9" layoutX="335.0" layoutY="466.0" mnemonicParsing="false" onAction="#menu" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="9">
+        <Button fx:id="n9" layoutX="335.0" layoutY="466.0" mnemonicParsing="false" onAction="#sasie" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="9">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-        <Button fx:id="n8" layoutX="274.0" layoutY="466.0" mnemonicParsing="false" onAction="#menu" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="8">
+        <Button fx:id="n8" layoutX="274.0" layoutY="466.0" mnemonicParsing="false" onAction="#sasie" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="8">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-        <Button fx:id="n7" layoutX="216.0" layoutY="467.0" mnemonicParsing="false" onAction="#menu" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="7">
+        <Button fx:id="n7" layoutX="216.0" layoutY="467.0" mnemonicParsing="false" onAction="#sasie" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="7">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-        <Button fx:id="n0" layoutX="274.0" layoutY="505.0" mnemonicParsing="false" onAction="#menu" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="0">
+        <Button fx:id="n0" layoutX="274.0" layoutY="505.0" mnemonicParsing="false" onAction="#sasie" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-        <Button fx:id="n5" layoutX="274.0" layoutY="428.0" mnemonicParsing="false" onAction="#menu" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="5">
+        <Button fx:id="n5" layoutX="274.0" layoutY="428.0" mnemonicParsing="false" onAction="#sasie" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="5">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-        <Button fx:id="n6" layoutX="335.0" layoutY="427.0" mnemonicParsing="false" onAction="#menu" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="6">
+        <Button fx:id="n6" layoutX="335.0" layoutY="427.0" mnemonicParsing="false" onAction="#sasie" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="6">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-        <Button fx:id="n3" layoutX="335.0" layoutY="389.0" mnemonicParsing="false" onAction="#menu" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="3">
+        <Button fx:id="n3" layoutX="335.0" layoutY="389.0" mnemonicParsing="false" onAction="#sasie" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="3">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-        <Button fx:id="n4" layoutX="215.0" layoutY="428.0" mnemonicParsing="false" onAction="#menu" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="4">
+        <Button fx:id="n4" layoutX="215.0" layoutY="428.0" mnemonicParsing="false" onAction="#sasie" opacity="0.0" prefHeight="25.0" prefWidth="49.0" text="4">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
@@ -99,7 +99,7 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-        <Button fx:id="entrer" layoutX="413.0" layoutY="505.0" mnemonicParsing="false" onAction="#menu" opacity="0.0" prefHeight="25.0" prefWidth="104.0" text="entrer">
+        <Button fx:id="entrer" layoutX="413.0" layoutY="505.0" mnemonicParsing="false" onAction="#sasie" opacity="0.0" prefHeight="25.0" prefWidth="104.0" text="entrer">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
@@ -122,9 +122,9 @@
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
-      <Label fx:id="screen2" layoutX="217.0" layoutY="198.0" prefHeight="151.0" prefWidth="304.0">
+      <Label fx:id="screen2" alignment="CENTER" layoutX="217.0" layoutY="198.0" prefHeight="151.0" prefWidth="304.0">
          <font>
-            <Font size="20.0" />
+            <Font size="16.0" />
          </font>
       </Label>
     </children>
